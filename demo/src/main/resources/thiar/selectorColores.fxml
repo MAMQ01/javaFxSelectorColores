@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<GridPane fx:id="gridPanePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thiar.SelectorColores">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox fx:id="hBoxPrincipal" GridPane.columnIndex="1">
+         <children>
+            <VBox fx:id="vBoxPilaContenedores" alignment="CENTER" spacing="10.0">
+               <children>
+                  <HBox fx:id="hBoxTextosRGB" alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="55.0">
+                     <children>
+                        <Label fx:id="labelR" text="R" />
+                        <Label fx:id="labelG" text="G" />
+                        <Label fx:id="labelB" text="B" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox fx:id="hBoxSliders" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="45.0">
+                     <children>
+                        <Slider fx:id="sliderR" max="255.0" onDragDetected="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="sliderG" max="255.0" onDragDetected="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="sliderB" max="255.0" onDragDetected="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="hBoxTextField" prefHeight="30.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <TextField fx:id="textFieldR" />
+                        <TextField fx:id="textFieldG" />
+                        <TextField fx:id="textFieldB" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <Label fx:id="labelHexaRGB" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <GridPane fx:id="gridPaneColores" prefHeight="400.0" prefWidth="191.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane fx:id="paneColores" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="50.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</GridPane>
