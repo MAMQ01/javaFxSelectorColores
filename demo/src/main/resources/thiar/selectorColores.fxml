@@ -37,9 +37,9 @@
                   </HBox>
                   <HBox fx:id="hBoxSliders" alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="45.0">
                      <children>
-                        <Slider fx:id="sliderR" max="255.0" onDragDetected="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
-                        <Slider fx:id="sliderG" max="255.0" onDragDetected="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
-                        <Slider fx:id="sliderB" max="255.0" onDragDetected="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="sliderR" max="255.0" onMouseDragged="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="sliderG" max="255.0" onMouseDragged="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
+                        <Slider fx:id="sliderB" max="255.0" onMouseDragged="#actualizarColor" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" />
                      </children>
                   </HBox>
                   <HBox fx:id="hBoxTextField" prefHeight="30.0" prefWidth="200.0" spacing="40.0">

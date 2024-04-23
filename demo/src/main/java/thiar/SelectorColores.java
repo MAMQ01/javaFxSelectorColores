@@ -18,60 +18,78 @@ public class SelectorColores implements Initializable {
     
     @FXML
     GridPane gridPanePrincipal;
+
     @FXML
     HBox hBoxPrincipal;
+
     @FXML
     GridPane gridPaneColores;
+
     @FXML
     Pane paneColores;
+
     @FXML
     Rectangle rectangulo;
+
     @FXML
     VBox vBoxPilaContenedores;
+
     @FXML
     HBox hBoxTextosRGB;
+
     @FXML
     Label labelR;
+
     @FXML
     Label labelG;
+
     @FXML
     Label labelB;
+
     @FXML
     HBox hBoxSliders;
+
     @FXML
     Slider sliderR;
+
     @FXML
     Slider sliderG;
+
     @FXML
     Slider sliderB;
+
     @FXML
     HBox hBoxTextField;
+
     @FXML
     TextField textFieldR;
+
     @FXML
     TextField textFieldG;
+
     @FXML
     TextField textFieldB;
+    
     @FXML
     Label labelHexaRGB;
 
-    double nuevoR;
-    double nuevoG;
-    double nuevoB;
-
-
+    @FXML
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         
-        sliderR.setOnMouseReleased((evento -> {
+        sliderR.setOnMouseDragged((evento -> {
             actualizarColor();
+            textFieldR.setText(Integer.toString((int)sliderR.getValue()));
         }));
-        sliderG.setOnMouseReleased((evento -> {
+        sliderG.setOnMouseDragged((evento -> {
             actualizarColor();
+            textFieldG.setText(Integer.toString((int)sliderG.getValue()));
         }));
-        sliderB.setOnMouseReleased((evento -> {
+        textFieldG.setOnMouseDragged((evento -> {
             actualizarColor();
+            textFieldB.setText(Integer.toString((int)sliderB.getValue()));
         }));
+        labelHexaRGB.setText("Color: #000000");
 
     }
 
