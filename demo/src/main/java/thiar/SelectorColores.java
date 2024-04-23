@@ -12,6 +12,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 public class SelectorColores implements Initializable {
@@ -103,10 +104,8 @@ public class SelectorColores implements Initializable {
         String stringHexa = String.format("#%02x%02x%02x",(int) r, (int) g, (int) b);
 
         labelHexaRGB.setText("Color: " + stringHexa);
-        rectangulo.setStyle(String.format("-fx-background-color: %s;", stringHexa));
+        rectangulo.setFill(Color.web(stringHexa));
 
     }
-
-
 
 }
