@@ -67,7 +67,7 @@
          <children>
             <Pane fx:id="paneColores" prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="50.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Rectangle fx:id="rectangulo" arcHeight="5.0" arcWidth="5.0" height="200.0" layoutX="50.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
                </children>
             </Pane>
          </children>

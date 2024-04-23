@@ -91,6 +91,7 @@ public class SelectorColores implements Initializable {
             textFieldB.setText(Integer.toString((int)sliderB.getValue()));
         }));
         labelHexaRGB.setText("Color: #000000");
+        rectangulo.setFill(Color.web("#000000"));
 
     }
 

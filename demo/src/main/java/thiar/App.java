@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,6 +19,9 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("selectorColores"), 640, 480);
+        stage.setTitle("Trabajo Manuel Muñoz");
+        Image icono = new Image(getClass().getResourceAsStream("/thiar/img/palette-regular-40.png"));
+        stage.getIcons().add(icono);
         stage.setScene(scene);
         stage.show();
     }
