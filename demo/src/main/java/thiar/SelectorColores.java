@@ -85,7 +85,7 @@ public class SelectorColores implements Initializable {
             actualizarColor();
             textFieldG.setText(Integer.toString((int)sliderG.getValue()));
         }));
-        textFieldG.setOnMouseDragged((evento -> {
+        sliderB.setOnMouseDragged((evento -> {
             actualizarColor();
             textFieldB.setText(Integer.toString((int)sliderB.getValue()));
         }));
