@@ -1,0 +1,23 @@
+.labelR {
+    -fx-text-fill: #ff0000;
+}
+
+.labelG {
+    -fx-text-fill: #1eff00;
+}
+
+.labelB {
+    -fx-text-fill: #0400ff;
+}
+
+.GridBox {
+    -fx-background-color: #190933;
+}
+
+.colorLetraRGB {
+    -fx-text-fill: #ffffff;
+}
+
+.textFieldLetra {
+    -fx-text-fill: #000000;
+}

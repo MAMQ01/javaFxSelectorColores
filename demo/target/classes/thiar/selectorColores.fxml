@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 
-<GridPane fx:id="gridPanePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thiar.SelectorColores">
+<GridPane fx:id="gridPanePrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="GridBox" stylesheets="@css/selectorColores.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thiar.SelectorColores">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -27,9 +27,9 @@
                <children>
                   <HBox fx:id="hBoxTextosRGB" alignment="CENTER" prefHeight="30.0" prefWidth="200.0" spacing="55.0">
                      <children>
-                        <Label fx:id="labelR" text="R" />
-                        <Label fx:id="labelG" text="G" />
-                        <Label fx:id="labelB" text="B" />
+                        <Label fx:id="labelR" styleClass="labelR" stylesheets="@css/selectorColores.css" text="R" />
+                        <Label fx:id="labelG" styleClass="labelG" stylesheets="@css/selectorColores.css" text="G" />
+                        <Label fx:id="labelB" styleClass="labelB" stylesheets="@css/selectorColores.css" text="B" />
                      </children>
                      <padding>
                         <Insets left="10.0" />
@@ -52,7 +52,7 @@
                         <Insets left="10.0" />
                      </padding>
                   </HBox>
-                  <Label fx:id="labelHexaRGB" />
+                  <Label fx:id="labelHexaRGB" styleClass="colorLetraRGB" stylesheets="@css/selectorColores.css" />
                </children>
             </VBox>
          </children>
